@@ -22,7 +22,7 @@ Released under version 3.0 of the [GNU General Public License][].
 
 ## Usage example
 
-'''java
+```java
 ElksTemplate template = new ElksTemplate();
 template.setUsername("...");
 template.setPassword("...");
@@ -38,7 +38,7 @@ SmsHistory history = template.querySmsHistory();
 for (SmsResponse entry : history.getResponses()) {
     System.out.println(entry.getId() + "  " + entry.getTo() + "  " + entry.getMessage());
 }
-'''
+```
 
 [46 Elks API]: http://www.46elks.com/docs/
 [GNU General Public License]: http://www.gnu.org/licenses/gpl.txt
