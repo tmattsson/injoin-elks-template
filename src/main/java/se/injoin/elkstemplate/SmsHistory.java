@@ -53,4 +53,12 @@ public class SmsHistory {
     public void setNext(Date next) {
         this.next = next;
     }
+
+    @Override
+    public String toString() {
+        return "SmsHistory{" +
+                "responses=" + responses +
+                ", next=" + next +
+                '}';
+    }
 }

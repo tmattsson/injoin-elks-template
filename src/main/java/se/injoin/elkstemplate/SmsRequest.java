@@ -83,4 +83,15 @@ public class SmsRequest {
     public void setDeliveryReportUrl(String deliveryReportUrl) {
         this.deliveryReportUrl = deliveryReportUrl;
     }
+
+    @Override
+    public String toString() {
+        return "SmsRequest{" +
+                "from='" + from + '\'' +
+                ", recipients=" + recipients +
+                ", message='" + message + '\'' +
+                ", flash=" + flash +
+                ", deliveryReportUrl='" + deliveryReportUrl + '\'' +
+                '}';
+    }
 }
